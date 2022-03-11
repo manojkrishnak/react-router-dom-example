@@ -1,0 +1,338 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* custom styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0 0.5rem; */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-20 {
+  flex: 0 1 20%;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.flex-80 {
+  flex: 0 1 80%;
+}
+
+.justify-bt {
+  justify-content: space-between;
+}
+
+.align-ct {
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.2;
+}
+
+.active {
+  background-color: #ccc9c9;
+}
+
+.header {
+  padding: 0.7rem 0;
+  background-color: #313f9e;
+  /* position: fixed;
+  z-index: 2;
+  width: 100%; */
+}
+
+.site-logo {
+  width: 40px;
+}
+
+.brand-name {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+.header-searchbar {
+  margin-left: 4rem;
+  width: 20%;
+  height: 30px;
+  background-color: #313f9e;
+  border: 0;
+  color: #fff;
+}
+
+.header-searchbar::placeholder {
+  color: #fff;
+}
+
+/* aside */
+
+.sidebar {
+  height: 100vh;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden; */
+  /* padding-top: 4rem; */
+  background-color: #fffefe;
+}
+
+.sidebar ul {
+  width: 100%;
+  height: 100%;
+}
+
+/* .sidebar li{
+  margin: 0.5rem 0;
+} */
+
+.sidebar .navlink {
+  padding: 0.7rem 1rem;
+  color: black;
+  /* background-color: #fff; */
+}
+
+.home-links a {
+  color: #000000;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(151, 172, 193, 0.7);
+}
+
+.home-container {
+  /* margin-top: 8rem;
+  margin-left: 10rem; */
+  background-color: #d0efee;
+  padding: 1rem;
+}
+
+.home-heading,
+.help-heading,
+.article-heading,
+.notfound-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Articles */
+
+.search-article {
+  width: 400px;
+  height: 40px;
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.all-articles {
+  padding: 1.5rem;
+}
+
+.article-title {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: blue;
+  text-decoration: underline;
+}
+
+.article-title:hover {
+  color: orangered;
+}
+
+.author-name {
+  font-size: 0.8rem;
+}
+
+.all-articles li {
+  margin-bottom: 1rem;
+}
+.content {
+  font-size: 1.2rem;
+}
+
+.slug {
+  font-weight: 700;
+}
+
+.back-btn {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 110px;
+  border-radius: 4px;
+}
+
+.back-btn:hover {
+  background-color: rgba(135, 235, 143, 0.5);
+}
