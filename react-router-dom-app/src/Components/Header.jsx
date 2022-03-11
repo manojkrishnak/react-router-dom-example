@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container flex align-ct">
-        <a className="logo flex " href="#">
+        <a className="logo flex " href="/">
           <svg
             className="site-logo"
             xmlns="http://www.w3.org/2000/svg"
